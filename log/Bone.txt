@@ -1,0 +1,367 @@
+[ 2023-08-25 21:06 ] Model load finished: model.sttformer_sta.Model
+[ 2023-08-25 21:07 ] Data load finished
+[ 2023-08-25 21:07 ] Optimizer load finished: SGD
+[ 2023-08-25 21:07 ] base_lr: 0.1
+[ 2023-08-25 21:07 ] batch_size: 64
+[ 2023-08-25 21:07 ] config: sta.yaml
+[ 2023-08-25 21:07 ] cuda_visible_device: 0,1
+[ 2023-08-25 21:07 ] device: [0, 1]
+[ 2023-08-25 21:07 ] eval_epoch: 60
+[ 2023-08-25 21:07 ] eval_interval: 5
+[ 2023-08-25 21:07 ] feeder: feeders.feeder_ntu.Feeder
+[ 2023-08-25 21:07 ] ignore_weights: []
+[ 2023-08-25 21:07 ] lr_decay_rate: 0.1
+[ 2023-08-25 21:07 ] model: model.sttformer_sta.Model
+[ 2023-08-25 21:07 ] model_args: {'factor': 8, 'len_parts': 6, 'num_frames': 120, 'num_joints': 25, 'num_classes': 60, 'num_heads': 3, 'kernel_size': [3, 5], 'num_persons': 2, 'num_channels': 3, 'use_pes': True, 'RoPE': True, 'config': [[64, 64, 16], [64, 64, 16], [64, 128, 32], [128, 128, 32], [128, 256, 64], [256, 256, 64], [256, 256, 64], [256, 256, 64]]}
+[ 2023-08-25 21:07 ] nesterov: True
+[ 2023-08-25 21:07 ] num_epoch: 90
+[ 2023-08-25 21:07 ] num_worker: 10
+[ 2023-08-25 21:07 ] optimizer: SGD
+[ 2023-08-25 21:07 ] print_log: True
+[ 2023-08-25 21:07 ] run_mode: train
+[ 2023-08-25 21:07 ] save_epoch: 60
+[ 2023-08-25 21:07 ] save_score: False
+[ 2023-08-25 21:07 ] show_topk: [1, 5]
+[ 2023-08-25 21:07 ] start_epoch: 0
+[ 2023-08-25 21:07 ] step: [60, 80]
+[ 2023-08-25 21:07 ] test_batch_size: 64
+[ 2023-08-25 21:07 ] test_feeder_args: {'data_path': '/home/ici/STTFormer/gendata/ntu/NTU60_XSub.npz', 'split': 'test', 'debug': False, 'window_size': 120, 'p_interval': [0.95], 'vel': False, 'bone': False}
+[ 2023-08-25 21:07 ] train_feeder_args: {'data_path': '/home/ici/STTFormer/gendata/ntu/NTU60_XSub.npz', 'split': 'train', 'debug': False, 'random_choose': False, 'random_shift': False, 'random_move': False, 'window_size': 120, 'normalization': False, 'random_rot': True, 'p_interval': [0.5, 1], 'vel': False, 'bone': False}
+[ 2023-08-25 21:07 ] warm_up_epoch: 5
+[ 2023-08-25 21:07 ] weight_decay: 0.0005
+[ 2023-08-25 21:07 ] weights: None
+[ 2023-08-25 21:07 ] work_dir: ./sta_f8_ff_softmax_RoPE/ntu60_xsub_joint_l6
+[ 2023-08-25 21:07 ] # Parameters: 5977140
+[ 2023-08-25 21:07 ] ###***************start training***************###
+[ 2023-08-25 21:07 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-25 21:09 ] Model load finished: model.sttformer_sta.Model
+[ 2023-08-25 21:09 ] Data load finished
+[ 2023-08-25 21:09 ] Optimizer load finished: SGD
+[ 2023-08-25 21:09 ] base_lr: 0.1
+[ 2023-08-25 21:09 ] batch_size: 64
+[ 2023-08-25 21:09 ] config: sta.yaml
+[ 2023-08-25 21:09 ] cuda_visible_device: 0,1
+[ 2023-08-25 21:09 ] device: [0, 1]
+[ 2023-08-25 21:09 ] eval_epoch: 60
+[ 2023-08-25 21:09 ] eval_interval: 5
+[ 2023-08-25 21:09 ] feeder: feeders.feeder_ntu.Feeder
+[ 2023-08-25 21:09 ] ignore_weights: []
+[ 2023-08-25 21:09 ] lr_decay_rate: 0.1
+[ 2023-08-25 21:09 ] model: model.sttformer_sta.Model
+[ 2023-08-25 21:09 ] model_args: {'factor': 8, 'len_parts': 6, 'num_frames': 120, 'num_joints': 25, 'num_classes': 60, 'num_heads': 3, 'kernel_size': [3, 5], 'num_persons': 2, 'num_channels': 3, 'use_pes': True, 'RoPE': True, 'config': [[64, 64, 16], [64, 64, 16], [64, 128, 32], [128, 128, 32], [128, 256, 64], [256, 256, 64], [256, 256, 64], [256, 256, 64]]}
+[ 2023-08-25 21:09 ] nesterov: True
+[ 2023-08-25 21:09 ] num_epoch: 90
+[ 2023-08-25 21:09 ] num_worker: 10
+[ 2023-08-25 21:09 ] optimizer: SGD
+[ 2023-08-25 21:09 ] print_log: True
+[ 2023-08-25 21:09 ] run_mode: train
+[ 2023-08-25 21:09 ] save_epoch: 60
+[ 2023-08-25 21:09 ] save_score: False
+[ 2023-08-25 21:09 ] show_topk: [1, 5]
+[ 2023-08-25 21:09 ] start_epoch: 0
+[ 2023-08-25 21:09 ] step: [60, 80]
+[ 2023-08-25 21:09 ] test_batch_size: 64
+[ 2023-08-25 21:09 ] test_feeder_args: {'data_path': '/home/ici/STTFormer/gendata/ntu/NTU60_XSub.npz', 'split': 'test', 'debug': False, 'window_size': 120, 'p_interval': [0.95], 'vel': False, 'bone': False}
+[ 2023-08-25 21:09 ] train_feeder_args: {'data_path': '/home/ici/STTFormer/gendata/ntu/NTU60_XSub.npz', 'split': 'train', 'debug': False, 'random_choose': False, 'random_shift': False, 'random_move': False, 'window_size': 120, 'normalization': False, 'random_rot': True, 'p_interval': [0.5, 1], 'vel': False, 'bone': False}
+[ 2023-08-25 21:09 ] warm_up_epoch: 5
+[ 2023-08-25 21:09 ] weight_decay: 0.0005
+[ 2023-08-25 21:09 ] weights: None
+[ 2023-08-25 21:09 ] work_dir: ./sta_f8_ff_softmax_RoPE/ntu60_xsub_joint_l6
+[ 2023-08-25 21:09 ] # Parameters: 5977140
+[ 2023-08-25 21:09 ] ###***************start training***************###
+[ 2023-08-25 21:09 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-25 21:10 ] Model load finished: model.sttformer_sta.Model
+[ 2023-08-25 21:10 ] Data load finished
+[ 2023-08-25 21:10 ] Optimizer load finished: SGD
+[ 2023-08-25 21:10 ] base_lr: 0.1
+[ 2023-08-25 21:10 ] batch_size: 64
+[ 2023-08-25 21:10 ] config: sta.yaml
+[ 2023-08-25 21:10 ] cuda_visible_device: 0,1
+[ 2023-08-25 21:10 ] device: [0, 1]
+[ 2023-08-25 21:10 ] eval_epoch: 60
+[ 2023-08-25 21:10 ] eval_interval: 5
+[ 2023-08-25 21:10 ] feeder: feeders.feeder_ntu.Feeder
+[ 2023-08-25 21:10 ] ignore_weights: []
+[ 2023-08-25 21:10 ] lr_decay_rate: 0.1
+[ 2023-08-25 21:10 ] model: model.sttformer_sta.Model
+[ 2023-08-25 21:10 ] model_args: {'factor': 8, 'len_parts': 6, 'num_frames': 120, 'num_joints': 25, 'num_classes': 60, 'num_heads': 3, 'kernel_size': [3, 5], 'num_persons': 2, 'num_channels': 3, 'use_pes': True, 'RoPE': True, 'config': [[64, 64, 16], [64, 64, 16], [64, 128, 32], [128, 128, 32], [128, 256, 64], [256, 256, 64], [256, 256, 64], [256, 256, 64]]}
+[ 2023-08-25 21:10 ] nesterov: True
+[ 2023-08-25 21:10 ] num_epoch: 90
+[ 2023-08-25 21:10 ] num_worker: 10
+[ 2023-08-25 21:10 ] optimizer: SGD
+[ 2023-08-25 21:10 ] print_log: True
+[ 2023-08-25 21:10 ] run_mode: train
+[ 2023-08-25 21:10 ] save_epoch: 60
+[ 2023-08-25 21:10 ] save_score: False
+[ 2023-08-25 21:10 ] show_topk: [1, 5]
+[ 2023-08-25 21:10 ] start_epoch: 0
+[ 2023-08-25 21:10 ] step: [60, 80]
+[ 2023-08-25 21:10 ] test_batch_size: 64
+[ 2023-08-25 21:10 ] test_feeder_args: {'data_path': '/home/ici/STTFormer/gendata/ntu/NTU60_XSub.npz', 'split': 'test', 'debug': False, 'window_size': 120, 'p_interval': [0.95], 'vel': False, 'bone': False}
+[ 2023-08-25 21:10 ] train_feeder_args: {'data_path': '/home/ici/STTFormer/gendata/ntu/NTU60_XSub.npz', 'split': 'train', 'debug': False, 'random_choose': False, 'random_shift': False, 'random_move': False, 'window_size': 120, 'normalization': False, 'random_rot': True, 'p_interval': [0.5, 1], 'vel': False, 'bone': False}
+[ 2023-08-25 21:10 ] warm_up_epoch: 5
+[ 2023-08-25 21:10 ] weight_decay: 0.0005
+[ 2023-08-25 21:10 ] weights: None
+[ 2023-08-25 21:10 ] work_dir: ./sta_f8_ff_softmax_RoPE/ntu60_xsub_joint_l6
+[ 2023-08-25 21:10 ] # Parameters: 5977140
+[ 2023-08-25 21:10 ] ###***************start training***************###
+[ 2023-08-25 21:10 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-25 21:12 ] Model load finished: model.sttformer_sta.Model
+[ 2023-08-25 21:12 ] Data load finished
+[ 2023-08-25 21:12 ] Optimizer load finished: SGD
+[ 2023-08-25 21:12 ] base_lr: 0.1
+[ 2023-08-25 21:12 ] batch_size: 64
+[ 2023-08-25 21:12 ] config: sta.yaml
+[ 2023-08-25 21:12 ] cuda_visible_device: 0,1
+[ 2023-08-25 21:12 ] device: [0, 1]
+[ 2023-08-25 21:12 ] eval_epoch: 60
+[ 2023-08-25 21:12 ] eval_interval: 5
+[ 2023-08-25 21:12 ] feeder: feeders.feeder_ntu.Feeder
+[ 2023-08-25 21:12 ] ignore_weights: []
+[ 2023-08-25 21:12 ] lr_decay_rate: 0.1
+[ 2023-08-25 21:12 ] model: model.sttformer_sta.Model
+[ 2023-08-25 21:12 ] model_args: {'factor': 8, 'len_parts': 6, 'num_frames': 120, 'num_joints': 25, 'num_classes': 60, 'num_heads': 3, 'kernel_size': [3, 5], 'num_persons': 2, 'num_channels': 3, 'use_pes': True, 'RoPE': True, 'config': [[64, 64, 16], [64, 64, 16], [64, 128, 32], [128, 128, 32], [128, 256, 64], [256, 256, 64], [256, 256, 64], [256, 256, 64]]}
+[ 2023-08-25 21:12 ] nesterov: True
+[ 2023-08-25 21:12 ] num_epoch: 90
+[ 2023-08-25 21:12 ] num_worker: 10
+[ 2023-08-25 21:12 ] optimizer: SGD
+[ 2023-08-25 21:12 ] print_log: True
+[ 2023-08-25 21:12 ] run_mode: train
+[ 2023-08-25 21:12 ] save_epoch: 60
+[ 2023-08-25 21:12 ] save_score: False
+[ 2023-08-25 21:12 ] show_topk: [1, 5]
+[ 2023-08-25 21:12 ] start_epoch: 0
+[ 2023-08-25 21:12 ] step: [60, 80]
+[ 2023-08-25 21:12 ] test_batch_size: 64
+[ 2023-08-25 21:12 ] test_feeder_args: {'data_path': '/home/ici/STTFormer/gendata/ntu/NTU60_XSub.npz', 'split': 'test', 'debug': False, 'window_size': 120, 'p_interval': [0.95], 'vel': False, 'bone': False}
+[ 2023-08-25 21:12 ] train_feeder_args: {'data_path': '/home/ici/STTFormer/gendata/ntu/NTU60_XSub.npz', 'split': 'train', 'debug': False, 'random_choose': False, 'random_shift': False, 'random_move': False, 'window_size': 120, 'normalization': False, 'random_rot': True, 'p_interval': [0.5, 1], 'vel': False, 'bone': False}
+[ 2023-08-25 21:12 ] warm_up_epoch: 5
+[ 2023-08-25 21:12 ] weight_decay: 0.0005
+[ 2023-08-25 21:12 ] weights: None
+[ 2023-08-25 21:12 ] work_dir: ./sta_f8_ff_softmax_RoPE/ntu60_xsub_joint_l6
+[ 2023-08-25 21:12 ] # Parameters: 5977140
+[ 2023-08-25 21:12 ] ###***************start training***************###
+[ 2023-08-25 21:12 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-25 21:21 ] training: epoch: 1, loss: 2.0286, top1: 42.07%, lr: 0.020000
+[ 2023-08-25 21:21 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-25 21:31 ] training: epoch: 2, loss: 1.3293, top1: 59.93%, lr: 0.040000
+[ 2023-08-25 21:31 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-25 21:40 ] training: epoch: 3, loss: 1.0586, top1: 67.78%, lr: 0.060000
+[ 2023-08-25 21:40 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-25 21:50 ] training: epoch: 4, loss: 0.9085, top1: 72.00%, lr: 0.080000
+[ 2023-08-25 21:50 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-25 22:00 ] training: epoch: 5, loss: 0.8234, top1: 74.57%, lr: 0.100000
+[ 2023-08-25 22:01 ] evaluating: loss: 1.0196, top1: 70.09%, best_acc: 70.09%
+[ 2023-08-25 22:01 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-25 22:11 ] training: epoch: 6, loss: 0.7405, top1: 76.94%, lr: 0.100000
+[ 2023-08-25 22:11 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-25 22:21 ] training: epoch: 7, loss: 0.6960, top1: 78.21%, lr: 0.100000
+[ 2023-08-25 22:21 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-25 22:31 ] training: epoch: 8, loss: 0.6572, top1: 79.63%, lr: 0.100000
+[ 2023-08-25 22:31 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-25 22:41 ] training: epoch: 9, loss: 0.6425, top1: 80.04%, lr: 0.100000
+[ 2023-08-25 22:41 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-25 22:50 ] training: epoch: 10, loss: 0.6110, top1: 81.13%, lr: 0.100000
+[ 2023-08-25 22:52 ] evaluating: loss: 0.8495, top1: 75.44%, best_acc: 75.44%
+[ 2023-08-25 22:52 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-25 23:02 ] training: epoch: 11, loss: 0.6000, top1: 81.30%, lr: 0.100000
+[ 2023-08-25 23:02 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-25 23:12 ] training: epoch: 12, loss: 0.5785, top1: 82.16%, lr: 0.100000
+[ 2023-08-25 23:12 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-25 23:22 ] training: epoch: 13, loss: 0.5675, top1: 82.40%, lr: 0.100000
+[ 2023-08-25 23:22 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-25 23:32 ] training: epoch: 14, loss: 0.5505, top1: 82.75%, lr: 0.100000
+[ 2023-08-25 23:32 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-25 23:41 ] training: epoch: 15, loss: 0.5452, top1: 82.93%, lr: 0.100000
+[ 2023-08-25 23:43 ] evaluating: loss: 0.6898, top1: 79.91%, best_acc: 79.91%
+[ 2023-08-25 23:43 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-25 23:53 ] training: epoch: 16, loss: 0.5338, top1: 83.36%, lr: 0.100000
+[ 2023-08-25 23:53 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 00:03 ] training: epoch: 17, loss: 0.5179, top1: 83.80%, lr: 0.100000
+[ 2023-08-26 00:03 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 00:13 ] training: epoch: 18, loss: 0.5215, top1: 83.73%, lr: 0.100000
+[ 2023-08-26 00:13 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 00:22 ] training: epoch: 19, loss: 0.5101, top1: 83.99%, lr: 0.100000
+[ 2023-08-26 00:22 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 00:32 ] training: epoch: 20, loss: 0.5060, top1: 84.19%, lr: 0.100000
+[ 2023-08-26 00:34 ] evaluating: loss: 0.6727, top1: 79.60%, best_acc: 79.91%
+[ 2023-08-26 00:34 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 00:44 ] training: epoch: 21, loss: 0.4988, top1: 84.56%, lr: 0.100000
+[ 2023-08-26 00:44 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 00:54 ] training: epoch: 22, loss: 0.4941, top1: 84.69%, lr: 0.100000
+[ 2023-08-26 00:54 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 01:03 ] training: epoch: 23, loss: 0.4808, top1: 84.86%, lr: 0.100000
+[ 2023-08-26 01:03 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 01:13 ] training: epoch: 24, loss: 0.4835, top1: 84.96%, lr: 0.100000
+[ 2023-08-26 01:13 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 01:23 ] training: epoch: 25, loss: 0.4779, top1: 85.00%, lr: 0.100000
+[ 2023-08-26 01:25 ] evaluating: loss: 0.6360, top1: 81.74%, best_acc: 81.74%
+[ 2023-08-26 01:25 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 01:34 ] training: epoch: 26, loss: 0.4634, top1: 85.47%, lr: 0.100000
+[ 2023-08-26 01:34 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 01:44 ] training: epoch: 27, loss: 0.4674, top1: 85.50%, lr: 0.100000
+[ 2023-08-26 01:44 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 01:54 ] training: epoch: 28, loss: 0.4667, top1: 85.43%, lr: 0.100000
+[ 2023-08-26 01:54 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 02:04 ] training: epoch: 29, loss: 0.4593, top1: 85.63%, lr: 0.100000
+[ 2023-08-26 02:04 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 02:14 ] training: epoch: 30, loss: 0.4523, top1: 85.82%, lr: 0.100000
+[ 2023-08-26 02:15 ] evaluating: loss: 0.6197, top1: 81.60%, best_acc: 81.74%
+[ 2023-08-26 02:15 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 02:25 ] training: epoch: 31, loss: 0.4592, top1: 85.75%, lr: 0.100000
+[ 2023-08-26 02:25 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 02:35 ] training: epoch: 32, loss: 0.4518, top1: 85.84%, lr: 0.100000
+[ 2023-08-26 02:35 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 02:45 ] training: epoch: 33, loss: 0.4370, top1: 86.22%, lr: 0.100000
+[ 2023-08-26 02:45 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 02:55 ] training: epoch: 34, loss: 0.4522, top1: 85.89%, lr: 0.100000
+[ 2023-08-26 02:55 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 03:04 ] training: epoch: 35, loss: 0.4424, top1: 85.94%, lr: 0.100000
+[ 2023-08-26 03:06 ] evaluating: loss: 0.6063, top1: 81.85%, best_acc: 81.85%
+[ 2023-08-26 03:06 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 03:16 ] training: epoch: 36, loss: 0.4393, top1: 86.08%, lr: 0.100000
+[ 2023-08-26 03:16 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 03:26 ] training: epoch: 37, loss: 0.4376, top1: 86.24%, lr: 0.100000
+[ 2023-08-26 03:26 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 03:35 ] training: epoch: 38, loss: 0.4236, top1: 86.79%, lr: 0.100000
+[ 2023-08-26 03:35 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 03:45 ] training: epoch: 39, loss: 0.4336, top1: 86.26%, lr: 0.100000
+[ 2023-08-26 03:45 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 03:55 ] training: epoch: 40, loss: 0.4323, top1: 86.36%, lr: 0.100000
+[ 2023-08-26 03:57 ] evaluating: loss: 0.6491, top1: 81.54%, best_acc: 81.85%
+[ 2023-08-26 03:57 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 04:07 ] training: epoch: 41, loss: 0.4215, top1: 86.78%, lr: 0.100000
+[ 2023-08-26 04:07 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 04:16 ] training: epoch: 42, loss: 0.4302, top1: 86.39%, lr: 0.100000
+[ 2023-08-26 04:16 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 04:26 ] training: epoch: 43, loss: 0.4254, top1: 86.86%, lr: 0.100000
+[ 2023-08-26 04:26 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 04:36 ] training: epoch: 44, loss: 0.4246, top1: 86.70%, lr: 0.100000
+[ 2023-08-26 04:36 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 04:46 ] training: epoch: 45, loss: 0.4247, top1: 86.66%, lr: 0.100000
+[ 2023-08-26 04:48 ] evaluating: loss: 0.6145, top1: 82.19%, best_acc: 82.19%
+[ 2023-08-26 04:48 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 04:58 ] training: epoch: 46, loss: 0.4183, top1: 86.82%, lr: 0.100000
+[ 2023-08-26 04:58 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 05:08 ] training: epoch: 47, loss: 0.4246, top1: 86.73%, lr: 0.100000
+[ 2023-08-26 05:08 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 05:17 ] training: epoch: 48, loss: 0.4201, top1: 86.79%, lr: 0.100000
+[ 2023-08-26 05:17 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 05:27 ] training: epoch: 49, loss: 0.4186, top1: 86.67%, lr: 0.100000
+[ 2023-08-26 05:27 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 05:37 ] training: epoch: 50, loss: 0.4095, top1: 87.09%, lr: 0.100000
+[ 2023-08-26 05:39 ] evaluating: loss: 0.5645, top1: 83.51%, best_acc: 83.51%
+[ 2023-08-26 05:39 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 05:48 ] training: epoch: 51, loss: 0.4161, top1: 86.96%, lr: 0.100000
+[ 2023-08-26 05:48 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 05:58 ] training: epoch: 52, loss: 0.4192, top1: 86.91%, lr: 0.100000
+[ 2023-08-26 05:58 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 06:08 ] training: epoch: 53, loss: 0.4097, top1: 87.14%, lr: 0.100000
+[ 2023-08-26 06:08 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 06:18 ] training: epoch: 54, loss: 0.4157, top1: 86.85%, lr: 0.100000
+[ 2023-08-26 06:18 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 06:28 ] training: epoch: 55, loss: 0.4138, top1: 87.07%, lr: 0.100000
+[ 2023-08-26 06:29 ] evaluating: loss: 0.6295, top1: 81.75%, best_acc: 83.51%
+[ 2023-08-26 06:29 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 06:39 ] training: epoch: 56, loss: 0.4078, top1: 87.30%, lr: 0.100000
+[ 2023-08-26 06:39 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 06:49 ] training: epoch: 57, loss: 0.4155, top1: 86.82%, lr: 0.100000
+[ 2023-08-26 06:49 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 06:59 ] training: epoch: 58, loss: 0.4096, top1: 87.12%, lr: 0.100000
+[ 2023-08-26 06:59 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 07:09 ] training: epoch: 59, loss: 0.4088, top1: 87.34%, lr: 0.100000
+[ 2023-08-26 07:09 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 07:19 ] training: epoch: 60, loss: 0.4022, top1: 87.51%, lr: 0.100000
+[ 2023-08-26 07:20 ] evaluating: loss: 0.6737, top1: 81.11%, best_acc: 83.51%
+[ 2023-08-26 07:20 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 07:30 ] training: epoch: 61, loss: 0.2134, top1: 93.48%, lr: 0.010000
+[ 2023-08-26 07:31 ] evaluating: loss: 0.3728, top1: 89.17%, best_acc: 89.17%
+[ 2023-08-26 07:31 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 07:41 ] training: epoch: 62, loss: 0.1459, top1: 95.75%, lr: 0.010000
+[ 2023-08-26 07:43 ] evaluating: loss: 0.3688, top1: 89.31%, best_acc: 89.31%
+[ 2023-08-26 07:43 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 07:53 ] training: epoch: 63, loss: 0.1247, top1: 96.33%, lr: 0.010000
+[ 2023-08-26 07:54 ] evaluating: loss: 0.3692, top1: 89.43%, best_acc: 89.43%
+[ 2023-08-26 07:54 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 08:04 ] training: epoch: 64, loss: 0.1022, top1: 97.09%, lr: 0.010000
+[ 2023-08-26 08:05 ] evaluating: loss: 0.3706, top1: 89.69%, best_acc: 89.69%
+[ 2023-08-26 08:05 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 08:15 ] training: epoch: 65, loss: 0.0874, top1: 97.64%, lr: 0.010000
+[ 2023-08-26 08:17 ] evaluating: loss: 0.3891, top1: 89.63%, best_acc: 89.69%
+[ 2023-08-26 08:17 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 08:27 ] training: epoch: 66, loss: 0.0741, top1: 97.99%, lr: 0.010000
+[ 2023-08-26 08:28 ] evaluating: loss: 0.3985, top1: 89.26%, best_acc: 89.69%
+[ 2023-08-26 08:28 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 08:38 ] training: epoch: 67, loss: 0.0665, top1: 98.22%, lr: 0.010000
+[ 2023-08-26 08:39 ] evaluating: loss: 0.3973, top1: 89.46%, best_acc: 89.69%
+[ 2023-08-26 08:39 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 08:50 ] training: epoch: 68, loss: 0.0566, top1: 98.56%, lr: 0.010000
+[ 2023-08-26 08:51 ] evaluating: loss: 0.4089, top1: 89.53%, best_acc: 89.69%
+[ 2023-08-26 08:51 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 09:01 ] training: epoch: 69, loss: 0.0522, top1: 98.76%, lr: 0.010000
+[ 2023-08-26 09:03 ] evaluating: loss: 0.4131, top1: 89.53%, best_acc: 89.69%
+[ 2023-08-26 09:03 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 09:13 ] training: epoch: 70, loss: 0.0492, top1: 98.76%, lr: 0.010000
+[ 2023-08-26 09:14 ] evaluating: loss: 0.4353, top1: 89.12%, best_acc: 89.69%
+[ 2023-08-26 09:14 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 09:25 ] training: epoch: 71, loss: 0.0444, top1: 98.94%, lr: 0.010000
+[ 2023-08-26 09:26 ] evaluating: loss: 0.4184, top1: 89.37%, best_acc: 89.69%
+[ 2023-08-26 09:26 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 09:36 ] training: epoch: 72, loss: 0.0417, top1: 99.02%, lr: 0.010000
+[ 2023-08-26 09:38 ] evaluating: loss: 0.4574, top1: 88.95%, best_acc: 89.69%
+[ 2023-08-26 09:38 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 09:48 ] training: epoch: 73, loss: 0.0403, top1: 99.11%, lr: 0.010000
+[ 2023-08-26 09:49 ] evaluating: loss: 0.4421, top1: 89.09%, best_acc: 89.69%
+[ 2023-08-26 09:49 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 09:59 ] training: epoch: 74, loss: 0.0397, top1: 99.05%, lr: 0.010000
+[ 2023-08-26 10:01 ] evaluating: loss: 0.4378, top1: 89.21%, best_acc: 89.69%
+[ 2023-08-26 10:01 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 10:11 ] training: epoch: 75, loss: 0.0406, top1: 99.05%, lr: 0.010000
+[ 2023-08-26 10:12 ] evaluating: loss: 0.4431, top1: 89.06%, best_acc: 89.69%
+[ 2023-08-26 10:12 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 10:22 ] training: epoch: 76, loss: 0.0398, top1: 99.11%, lr: 0.010000
+[ 2023-08-26 10:23 ] evaluating: loss: 0.4460, top1: 88.96%, best_acc: 89.69%
+[ 2023-08-26 10:23 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 10:33 ] training: epoch: 77, loss: 0.0404, top1: 99.05%, lr: 0.010000
+[ 2023-08-26 10:34 ] evaluating: loss: 0.4417, top1: 89.17%, best_acc: 89.69%
+[ 2023-08-26 10:34 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 10:44 ] training: epoch: 78, loss: 0.0387, top1: 99.13%, lr: 0.010000
+[ 2023-08-26 10:46 ] evaluating: loss: 0.4599, top1: 88.68%, best_acc: 89.69%
+[ 2023-08-26 10:46 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 10:56 ] training: epoch: 79, loss: 0.0388, top1: 99.12%, lr: 0.010000
+[ 2023-08-26 10:57 ] evaluating: loss: 0.4426, top1: 89.27%, best_acc: 89.69%
+[ 2023-08-26 10:57 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 11:08 ] training: epoch: 80, loss: 0.0423, top1: 99.05%, lr: 0.010000
+[ 2023-08-26 11:09 ] evaluating: loss: 0.4486, top1: 88.75%, best_acc: 89.69%
+[ 2023-08-26 11:09 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 11:19 ] training: epoch: 81, loss: 0.0266, top1: 99.50%, lr: 0.001000
+[ 2023-08-26 11:21 ] evaluating: loss: 0.4196, top1: 89.62%, best_acc: 89.69%
+[ 2023-08-26 11:21 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 11:31 ] training: epoch: 82, loss: 0.0187, top1: 99.69%, lr: 0.001000
+[ 2023-08-26 11:32 ] evaluating: loss: 0.4202, top1: 89.71%, best_acc: 89.71%
+[ 2023-08-26 11:32 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 11:42 ] training: epoch: 83, loss: 0.0158, top1: 99.79%, lr: 0.001000
+[ 2023-08-26 11:44 ] evaluating: loss: 0.4226, top1: 89.74%, best_acc: 89.74%
+[ 2023-08-26 11:44 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 11:54 ] training: epoch: 84, loss: 0.0145, top1: 99.82%, lr: 0.001000
+[ 2023-08-26 11:55 ] evaluating: loss: 0.4220, top1: 89.92%, best_acc: 89.92%
+[ 2023-08-26 11:55 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 12:05 ] training: epoch: 85, loss: 0.0140, top1: 99.81%, lr: 0.001000
+[ 2023-08-26 12:07 ] evaluating: loss: 0.4218, top1: 89.71%, best_acc: 89.92%
+[ 2023-08-26 12:07 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 12:17 ] training: epoch: 86, loss: 0.0133, top1: 99.84%, lr: 0.001000
+[ 2023-08-26 12:18 ] evaluating: loss: 0.4229, top1: 89.83%, best_acc: 89.92%
+[ 2023-08-26 12:18 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 12:28 ] training: epoch: 87, loss: 0.0119, top1: 99.86%, lr: 0.001000
+[ 2023-08-26 12:30 ] evaluating: loss: 0.4207, top1: 89.73%, best_acc: 89.92%
+[ 2023-08-26 12:30 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 12:40 ] training: epoch: 88, loss: 0.0121, top1: 99.86%, lr: 0.001000
+[ 2023-08-26 12:41 ] evaluating: loss: 0.4237, top1: 89.80%, best_acc: 89.92%
+[ 2023-08-26 12:41 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 12:52 ] training: epoch: 89, loss: 0.0103, top1: 99.91%, lr: 0.001000
+[ 2023-08-26 12:53 ] evaluating: loss: 0.4190, top1: 89.79%, best_acc: 89.92%
+[ 2023-08-26 12:53 ] adjust learning rate, using warm up, epoch: 5
+[ 2023-08-26 13:03 ] training: epoch: 90, loss: 0.0115, top1: 99.85%, lr: 0.001000
+[ 2023-08-26 13:04 ] evaluating: loss: 0.4256, top1: 89.71%, best_acc: 89.92%
+[ 2023-08-26 13:04 ] Done.
+
