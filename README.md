@@ -1,3 +1,5 @@
+Paper: MAFormer: A Cross-channel Spatio-temporal Feature Aggregation Method for Human Action Recognition<br>
+
 Train: main.py<br>
 Test: test.py
 
